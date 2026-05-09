@@ -1,0 +1,166 @@
+/* ================= HERO SECTION ================= */
+/* ================= HERO WITH YOUR IMAGE ================= */
+.hero {
+    height: 80vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url('https://img.pikbest.com/photo/20240927/the-splash-of-sweet-tropical-fruits-and-mixed-berries_10878903.jpg!bw800');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 20px;
+}
+@media (max-width: 768px) {
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+/* TEXT IMPROVEMENT */
+.hero h1 {
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 18px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* BUTTON */
+.hero .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+/* ================= PRODUCT CARDS ================= */
+.product-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ================= WHOLESALE SECTION ================= */
+/* ================= WHOLESALE SECTION ================= */
+.wholesale-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f8f9fa, #eefaf2);
+}
+
+/* CONTACT CARD */
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT LINKS */
+.contact-link {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #28a745;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .wholesale-section {
+        text-align: center;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-link {
+        font-size: 16px;
+    }
+}
+
+/* ================= CTA ================= */
+.cta {
+    background: #28a745;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+/* ================= BUTTON HOVER ================= */
+.btn {
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* ================= NAVBAR FIX ================= */
+.navbar .nav-link {
+    margin-left: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .contact-box {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .product-card img {
+        height: 160px;
+    }
+}

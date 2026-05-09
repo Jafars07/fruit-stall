@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Order Details</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+
+        body {
+            background: #f4f7fb;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        .page-title {
+
+            font-weight: 700;
+
+            color: #198754;
+        }
+
+        .order-card {
+
+            border: none;
+
+            border-radius: 18px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+            transition: 0.3s;
+        }
+
+        .order-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .product-img {
+
+            width: 80px;
+
+            height: 80px;
+
+            border-radius: 14px;
+
+            object-fit: cover;
+
+            border: 2px solid #eee;
+        }
+
+        .price {
+            color: #198754;
+            font-weight: 700;
+        }
+
+        .qty-badge {
+
+            background: #198754;
+
+            color: white;
+
+            padding: 6px 12px;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+        }
+
+        .summary-card {
+
+            background: white;
+
+            border-radius: 18px;
+
+            padding: 25px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .back-btn {
+
+            border-radius: 10px;
+
+            padding: 10px 18px;
+
+            font-weight: 600;
+        }
+
+        @media(max-width:768px) {
+
+            .product-img {
+
+                width: 65px;
+
+                height: 65px;
+            }
+
+            .order-card {
+
+                padding: 15px !important;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            .summary-card {
+                padding: 18px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container py-4">
+
+    <!-- TITLE -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+
+        <h2 class="page-title">
+            <i class="bi bi-receipt"></i>
+            Order Details
+        </h2>
+
+        <button class="btn btn-outline-secondary back-btn"
+                onclick="goBack()">
+
+            <i class="bi bi-arrow-left"></i>
+            Back
+
+        </button>
+
+    </div>
+
+    <!-- ORDER ITEMS -->
+    <div id="orderItems" class="row g-4"></div>
+
+    <!-- TOTAL -->
+    <div class="summary-card mt-4">
+
+        <div class="d-flex justify-content-between align-items-center">
+
+            <h4 class="mb-0">
+                Total Amount
+            </h4>
+
+            <h3 class="price mb-0">
+                ₹<span id="orderTotal">0</span>
+            </h3>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- TOAST -->
+<div class="toast-container position-fixed top-0 end-0 p-3"
+     style="z-index: 9999">
+
+    <div id="liveToast"
+         class="toast align-items-center text-white bg-success border-0"
+         role="alert">
+
+        <div class="d-flex">
+
+            <div class="toast-body"
+                 id="toastMsg">
+
+                Success
+
+            </div>
+
+            <button type="button"
+                    class="btn-close btn-close-white me-2 m-auto"
+                    data-bs-dismiss="toast">
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/js/Order-Details.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

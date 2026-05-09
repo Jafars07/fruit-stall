@@ -1,0 +1,158 @@
+body {
+    background: #f4f7fb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+/* DASHBOARD */
+.dashboard-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+}
+
+.dashboard-card i {
+
+    font-size: 35px;
+
+    color: #198754;
+
+    margin-bottom: 10px;
+}
+
+.dashboard-card.success i {
+    color: #198754;
+}
+
+.dashboard-card.danger i {
+    color: #dc3545;
+}
+
+.dashboard-card h4 {
+
+    font-weight: 700;
+
+    margin: 0;
+}
+
+.dashboard-card p {
+
+    margin-top: 5px;
+
+    color: gray;
+}
+
+
+/* CARD */
+.card {
+    border-radius: 18px;
+}
+
+
+/* FORM */
+.form-control {
+
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.form-control:focus {
+
+    border-color: #198754;
+
+    box-shadow: 0 0 0 0.2rem rgba(25,135,84,0.15);
+}
+
+
+/* BUTTON */
+.btn {
+
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+
+/* IMAGE PREVIEW */
+.preview-img {
+
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    border: 2px solid #ddd;
+}
+
+
+/* TABLE IMAGE */
+.table-img {
+
+    width: 70px;
+
+    height: 70px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* SEARCH */
+.search-box {
+    max-width: 280px;
+}
+
+
+/* TABLE */
+.table {
+
+    border-radius: 14px;
+
+    overflow: hidden;
+}
+
+.table tbody tr:hover {
+    background: #f5fff7;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    .dashboard-card {
+        padding: 18px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .btn-sm {
+
+        width: 100%;
+
+        margin-bottom: 5px;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+}
