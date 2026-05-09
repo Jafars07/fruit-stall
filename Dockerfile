@@ -2,8 +2,10 @@ FROM eclipse-temurin:17-jdk
 
 WORKDIR /app
 
-COPY target/Fruit-Shop-0.0.1-SNAPSHOT.jar app.jar
+COPY . .
 
-EXPOSE 8080
+RUN ./mvnw clean package -DskipTests
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+EXPOSE 8000
+
+CMD ["java", "-jar", "target/Fruit-Shop-0.0.1-SNAPSHOT.jar"]
